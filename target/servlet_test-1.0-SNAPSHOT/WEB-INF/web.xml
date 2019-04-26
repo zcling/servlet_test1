@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <!-- Filter mappings ================================================ -->
+
+    <welcome-file-list>
+        <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>AppServlet</servlet-name>
+        <servlet-class>AppServlet</servlet-class>
+        <load-on-startup>1</load-on-startup><!--大于0的则表示在容器启动的时候就加载-->
+    </servlet>
+    <!-- URL space mappings ============================================= -->
+    <servlet-mapping>
+        <servlet-name>AppServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AppCookie</servlet-name>
+        <servlet-class>AppCookie</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AppCookie</servlet-name>
+        <url-pattern>/cookie</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+        
