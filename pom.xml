@@ -68,7 +68,7 @@
             <version>4.1.2.RELEASE</version>
             <scope>compile</scope>
         </dependency>
-
+        <!--servlet容器已经提供了这个资源，所以该jar只是在编译和测试阶段使用-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -83,6 +83,11 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
+        </dependency>
 
     </dependencies>
 

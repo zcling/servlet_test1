@@ -1,3 +1,5 @@
+package app;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +14,6 @@ public class AppServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Cookie cookie=new Cookie("ceshi01","value01");
-        cookie.setPath("");
         response.addCookie(cookie);
         response.sendRedirect("/index.jsp");
     }

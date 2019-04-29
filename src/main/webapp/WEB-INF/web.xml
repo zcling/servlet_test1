@@ -14,7 +14,7 @@
 
     <servlet>
         <servlet-name>AppServlet</servlet-name>
-        <servlet-class>AppServlet</servlet-class>
+        <servlet-class>app.AppServlet</servlet-class>
         <load-on-startup>1</load-on-startup><!--大于0的则表示在容器启动的时候就加载-->
     </servlet>
     <!-- URL space mappings ============================================= -->
@@ -25,7 +25,7 @@
 
     <servlet>
         <servlet-name>AppCookie</servlet-name>
-        <servlet-class>AppCookie</servlet-class>
+        <servlet-class>app.AppCookie</servlet-class>
     </servlet>
 
     <servlet-mapping>
